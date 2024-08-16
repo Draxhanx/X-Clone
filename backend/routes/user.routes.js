@@ -7,7 +7,7 @@ const router = express.Router()
 router.get('/profile/:username',protecteded,getUserProfile)
 router.get('/suggested',protecteded,getSuggestedUser)
 router.post('/follow/:id',protecteded,getFollowUnfollowUser)
-router.get('/update',protecteded,getUpdateUser)
+router.post('/update',protecteded,getUpdateUser)
 
 
 
